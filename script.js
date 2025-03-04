@@ -1,9 +1,11 @@
 const screen= document.querySelector('input');
+const aud= document.querySelector('audio');
 screen.disabled =true;
 
 
 function pressed(val){
     screen.value +=val;
+    aud.play();
 }
 
 function result(){
